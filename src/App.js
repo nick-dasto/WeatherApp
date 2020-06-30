@@ -1,25 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Search from "./components/Search";
+import CurrentWeather from "./components/CurrentWeather";
+import { WeatherProvider } from "./context/WeatherContext";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <WeatherProvider>
+      <div
+        className={
+          // typeof weather.weather != "undefined"
+          //   ? weather.weather[0].main === "Rain"
+          //     ? "app rain"
+          //     : weather.weather[0].main === "Clear"
+          //     ? "app clear"
+          //     : weather.weather[0].main === "Clouds"
+          //     ? "app cloudy"
+          //     : weather.weather[0].main === "Snow"
+          //     ? "app snow"
+          //     : "app"
+          //   :
+          "app"
+        }
+      >
+        <main>
+          <Search />
+          <CurrentWeather />
+        </main>
+      </div>
+    </WeatherProvider>
   );
 }
 
