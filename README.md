@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -66,3 +67,12 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+=======
+# WeatherApp
+
+Followed youtube guide https://www.youtube.com/watch?v=GuA0_Z1llYU&t=238s
+
+Added a few personal customizations
+
+Need to fix background images
+>>>>>>> e27af530a0b72d5612a126e3eee6335f639890ba
